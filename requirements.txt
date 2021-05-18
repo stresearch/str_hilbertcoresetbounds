@@ -1,0 +1,4 @@
+cupy
+keras
+pytorch
+tensorflow==1.14.0
