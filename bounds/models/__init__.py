@@ -3,7 +3,7 @@ import logging
 import os
 from abc import abstractmethod, ABC
 
-DIR_NAME = os.path.dirname(os.path.realpath(__file__)).split("bound")[0]
+DIR_NAME = os.path.dirname(os.path.realpath(__file__)).split("/bound")[0] + "/"
 
 
 log = logging.getLogger("str_lwll")

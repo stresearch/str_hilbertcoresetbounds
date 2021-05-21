@@ -44,7 +44,7 @@ class StrMnist(Model):
         label_test[ind] = 1
 
         sample = np.load(
-            "/proj/lwll/bound_evaluation_models/str_binary_mnist/binary_mnist_samples.npy"
+            DIR_NAME + "bound_evaluation_models/str_binary_mnist/binary_mnist_samples.npy"
         )
         self.train_set = x_train[sample[: int(checkpoint)]]
         self.train_labels = label_train[sample[: int(checkpoint)]]
