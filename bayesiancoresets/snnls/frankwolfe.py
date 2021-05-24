@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research 2020-2021
+
+This module performs the Frank Wolfe algorithm to update the coreset weights
+"""
 import numpy as np
 from ..util.errors import NumericalPrecisionError
 from .snnls import SparseNNLS

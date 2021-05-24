@@ -1,3 +1,8 @@
+"""
+Copyright 2020-2021 Systems & Technology Research
+
+This module is a series of pytest test functions for the ISI Cifar model interface in models/model_ta1_isi_cifar.py
+"""
 import pytest
 import numpy as np
 from torch.utils.data import Subset

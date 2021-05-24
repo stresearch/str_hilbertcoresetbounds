@@ -1,3 +1,8 @@
+"""
+Copyright 2020-2021 Systems & Technology Research
+
+This module is an interface between the model and the bound computation
+"""
 import numpy as np
 import logging
 import os

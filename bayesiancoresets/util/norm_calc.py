@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research 2020-2021
+
+This module manages the binary loss matrix of the network
+"""
 import numpy as np
 import cupy as cp
 

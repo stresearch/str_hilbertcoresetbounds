@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research 2020-2021
+
+This module tracks the coreset used in bound computation
+"""
 import numpy as np
 import logging
 import secrets

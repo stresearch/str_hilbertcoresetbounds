@@ -1,3 +1,8 @@
+"""
+COpyright Systems & Technology Research  2020-2021
+
+This module does the finite dimensional projection of the posterior distribution
+"""
 import numpy as np
 
 class BayesianTangentSpaceFactory(object):

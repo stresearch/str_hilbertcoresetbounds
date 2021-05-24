@@ -1,3 +1,8 @@
+"""
+Copyright 2020-2021 Systems & TEchnology Research
+
+This module is a series of pytest tests of the model interface in models/__init__.py
+"""
 from bounds.models import Model
 import pytest
 import numpy as np

@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research 2020-2021
+
+This module manages the algorithm to update the coreset weigths
+"""
 import numpy as np
 import logging
 import secrets

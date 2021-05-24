@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research 2020-2021
+
+This module calculates the coreset for the bound computation
+"""
 import numpy as np
 import bayesiancoresets as bc
 from os import path

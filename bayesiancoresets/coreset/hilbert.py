@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research 2020-2021
+
+This module is the implementation of the coreset algorithm using the Hilbert spaces
+"""
 import numpy as np
 from ..util.errors import NumericalPrecisionError
 from .coreset import Coreset

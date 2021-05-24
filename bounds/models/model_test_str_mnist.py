@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research 2020-2021
+
+This module is an interface for the STR Mnist model
+"""
 import numpy as np
 from keras import models, losses, datasets
 import keras.backend as K

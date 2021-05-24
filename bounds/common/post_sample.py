@@ -1,3 +1,8 @@
+"""
+Copyright 2020-2021 Systems & Technology Research
+
+This module samples network weights from teh posterior distribution and calculates teh binary loss matrix for the network
+"""
 import numpy as np
 import cupy as cp
 import os

@@ -1,3 +1,8 @@
+"""
+Copyright 2020-2021 Systems & Technology Research
+
+This module is a series of pytest tests for the STR Mnist model interface at models/model_test_str_mnits.py
+"""
 import pytest
 import numpy as np
 from bounds.models.model_test_str_mnist import StrMnist

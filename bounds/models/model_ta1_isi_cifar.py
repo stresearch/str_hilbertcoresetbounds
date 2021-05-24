@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research 2020-2021
+
+This module is an interface for the ISI Cifar model to run bound computation
+"""
 import torch
 from torch.utils.data import Subset, DataLoader
 import numpy as np
