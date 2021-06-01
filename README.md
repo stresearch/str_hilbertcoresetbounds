@@ -56,18 +56,18 @@ You must also add your model as an option to run in the model-name command line 
 You can see how the STR Mnist model was trained in the provided notebook
 
 ```bash
-bounds/neural_net/mnist_training.ipynb
+bounds/str_mnist/mnist_training.ipynb
 ```
 
 The script for bound computation provides files with the information for bound computation saved within them.
 The analysis of these results and computation of the actural bound is performed in the notebook:
 
 ```bash
-bounds/neural_net/mnist_bound_computation.ipynb
+bounds/str_mnist/mnist_bound_computation.ipynb
 ```
 
 Similarly, we analyze the results for the ISI Cifar model in
 
 ```bash
-bounds/ta1_eval/isi_cifar_results.ipynb
+bounds/isi_cifar/isi_cifar_results.ipynb
 ```
