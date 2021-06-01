@@ -8,7 +8,7 @@ from torch.utils.data import Subset, DataLoader
 import numpy as np
 import torchvision.transforms as transforms
 import torchvision
-from bounds.ta1_eval.mt_net import MT_CNN
+from bounds.isi_cifar.mt_net import MT_CNN
 import os
 from bounds.models import Model, DIR_NAME
 import sys
