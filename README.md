@@ -1,7 +1,7 @@
 # STR Hilbert Coreset Bounds
 
 There are some scripts in here that allow for calculation of performance bounds on a given network.
-The code uses coresets on a hilbert space to construct a generalization bound over the data.
+The code uses coresets on a Hilbert space to construct a generalization bound over the data.
 
 ## Initialization 
 
@@ -19,7 +19,10 @@ The results are analyzed in our bound analysis notebooks.
 
 # Hilbert Coreset Bound Computation
 
-The code compute generalization bounds on the 
+The code compute generalization bounds on the data using teh Frank-Wolfe algorithm to construct coresets over a Hilbert space.
+The primary coreset calculation script takes a model with trained parameters and a dataset on which it operates.
+It provides a file with results that contain all necessary parameters for teh computation of the generalization bound.
+We provide examples of calculating the generalization bounds for the provided models in the notebooks.
 
 ## Usage
 
