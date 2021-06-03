@@ -13,17 +13,41 @@ Run the following command to set up the repo:
 pip install -r requirements.txt
 ```
 
-Models used for evaluation are provided in the boundd evaluation models directory.
+Models used for evaluation are provided in the bound evaluation models directory.
 We also provide the outputs of the bound computation in the bound calculation directory.
 The results are analyzed in our bound analysis notebooks.
 
 # Hilbert Coreset Bound Computation
 
-These bounds are based on the Hilbert Coreset formulation in [this] pape (link wiill be added in future). We provide teh code to run teh Hilbert coreset calculations used in that paper.
+The code compute generalization bounds on the 
 
 ## Usage
 
 You can run any of the provided models to calculate the bounds with Hilbert coresets. 
+We have provided two models that can be used for bound computation as well as several checkpoints for each models:
+- StrMnist
+    - 500
+    - 3000
+    - 10000
+    - 30000
+- IsiCifar
+    - 500
+    - 2500
+    - 4000
+    - 10000
+
+The coerset calc script has several key parameters:
+- model-name: The name of the model
+- checkpoint: The checkpoint for the model
+- hessian: A location to store the hessian of the loss function
+- sample-loc: A location to store the binary loss matrix
+- sigma-prior: The standard deviation of the prior
+- projection-dimensions: The number of parameter samples we take from the posterior
+- num-iterations: The number of iterations to run the coreset construction algorithm
+- checkpoint-loc: A location to store periodic checkpoint files
+- gpus: The GPU on the machine to use for the computation
+- result-loc: Location of file to store the final results of the script
+- log-leve: THe level of logging info for the program to provide
 
 Example:
 
@@ -38,7 +62,29 @@ However, this script can still take several hours to complete, as many of the co
 NOTE: Currently, the computation requires use of a GPU.
 This may be changed in the future.
 
-## In House Models
+The results will be stored in an npz file with the following attributes:
+- iters: The number of Frank-Wolfe algorithm iterations
+- coresize: The size of the coresets
+- genErr: The expected error of the model
+- wminuspnorm_full: The L1 norm of the difference between the coreset weihts and the data distribution
+- lnorm_prior: The L2 norm of the risk samples
+- llwnorm: The L2 norm of the difference between the loss and coreset of the loss
+- lwnorm: The L2 norm of the coreset
+- wnorm: The L1 norm of the coreset weights
+- params: A list of bound parameters: [sigma, eta, eta_bar, beta, xi]
+
+## Computing bound values
+
+The results file from the coreset calculation script include all necessary parameters to compute the bounds on the model.
+For an example, we have computed the bounds on teh STR Mnist model in
+
+```bash
+bounds/str_mnist/mnist_bound_computation.ipynb
+```
+
+This can be used to compute how the bound changes with number of iterations and coreset size, as well as looking at how the bound depends on the checkpoint.
+
+## Using Your Own Model
 
 The Model module provides an interface between the STR bound calculation code and a model. Documentation for the functions is provided in the module. To calculate bounds for your own in-house model, implement a class that extends teh Model interface. There are 4 key functions to implement:
 
