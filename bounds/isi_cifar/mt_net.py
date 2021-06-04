@@ -1,5 +1,7 @@
 """
-Reproduced with Permission from ISI
+#######################################
+# Reproduced with Permission from ISI #
+#######################################
 
 This module defines teh architecture for the ISI Cifar network
 """

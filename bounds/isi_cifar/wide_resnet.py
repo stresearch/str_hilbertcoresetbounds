@@ -1,5 +1,7 @@
 """
-Reproduced with permission from ISI
+#######################################
+# Reproduced with permission from ISI #
+#######################################
 
 Ref:
 https://github.com/hysts/pytorch_wrn/blob/master/wrn.py
