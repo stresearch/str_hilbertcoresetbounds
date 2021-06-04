@@ -1,3 +1,8 @@
+"""
+Copyright Systems & Technology Research
+
+THis module contains several utility functions that compute parameters for the bound function
+"""
 import numpy as np
 import math
 from scipy.stats import multivariate_normal as mvnorm
