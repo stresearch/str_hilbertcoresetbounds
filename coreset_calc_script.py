@@ -1,3 +1,8 @@
+"""
+Copyright 2020-2021 Systems & Technology Research
+
+This script calculates all parameters needed for the computation of the genralization bound
+"""
 import os
 import numpy as np
 from bounds.common.post_sample import sample_posterior
